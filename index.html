@@ -4,27 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>LR 1</title>
 </head>
+<body>
+
+<input type="text" id="input" size="30px">
+<input type="button" value="Apply" onclick="textOutput()">
+<div id="content">
+</div>
 
 <script>
     function arr(n) {
-        let arr = new Array(n);
-        for (i = 0; i < n; i++)
-            arr[i] = i;
-        return arr;
+        if (n < 0)
+            console.log('Wrong input')
+        else {
+            let arr = new Array(n);
+            for (let i = 0; i < n; i++)
+                arr[i] = i;
+            console.log(arr);
+        }
     }
 
     function check(a, b, c) {
         if (a % b == 0 && a % c == 0)
-            return true;
+            console.log('true');
         else
-            return false;
+            console.log('false');
     }
 
     function capitalize(str) {
         if (!str) return 'Empty string';
-        return str[0].toUpperCase() + str.slice(1);
+        return console.log(str[0].toUpperCase() + str.slice(1));
     }
 </script>
 <script src="js/script.js"></script>
