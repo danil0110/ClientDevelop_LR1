@@ -1,4 +1,3 @@
 function textOutput() {
-    var str = document.getElementById("input").value;
-    document.getElementById("content").textContent = str;
+    document.getElementById("content").textContent = document.getElementById("input").value;
 }
