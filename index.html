@@ -6,8 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
 </head>
-<body>
 
+<script>
+    function arr(n) {
+        let arr = new Array(n);
+        for (i = 0; i < n; i++)
+            arr[i] = i;
+        return arr;
+    }
+
+    function check(a, b, c) {
+        if (a % b == 0 && a % c == 0)
+            return true;
+        else
+            return false;
+    }
+
+    function capitalize(str) {
+        if (!str) return 'Empty string';
+        return str[0].toUpperCase() + str.slice(1);
+    }
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>
